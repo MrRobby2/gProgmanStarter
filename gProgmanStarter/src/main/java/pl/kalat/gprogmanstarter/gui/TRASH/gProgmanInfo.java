@@ -1,4 +1,4 @@
-package pl.kalat.gprogmanstarter.gui;
+package pl.kalat.gprogmanstarter.gui.TRASH;
 
 /**
  *

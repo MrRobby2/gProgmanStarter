@@ -1,14 +1,14 @@
-package pl.kalat.gprogmanstarter;
+package pl.kalat.gprogmanstarter.app;
 
 import pl.kalat.gprogmanstarter.implementation.ListApps;
-import pl.kalat.gprogmanstarter.gui.gProgmanStarter;
-import pl.kalat.gprogmanstarter.gui.gProgmanInfo;
+import pl.kalat.gprogmanstarter.gui.TRASH.gProgmanStarter;
+import pl.kalat.gprogmanstarter.gui.TRASH.gProgmanInfo;
 
 /**
  *
  * @author Robert Kałat
  */
-public class Main {
+public class MainOLD {
 
     public static void main(String[] args) {
         
