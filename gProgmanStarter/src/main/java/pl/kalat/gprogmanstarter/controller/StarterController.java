@@ -2,6 +2,7 @@ package pl.kalat.gprogmanstarter.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -10,7 +11,7 @@ import javafx.fxml.FXML;
  *
  * @author Robert Kałat
  */
-public class GProgmanStarterController{
+public class StarterController{
 
     @FXML
     private ResourceBundle resources;
@@ -20,7 +21,7 @@ public class GProgmanStarterController{
 
     @FXML
     void onActionButtonEnd(ActionEvent event) {
-        System.exit(0);
+        Platform.exit();
     }
 
       @FXML
