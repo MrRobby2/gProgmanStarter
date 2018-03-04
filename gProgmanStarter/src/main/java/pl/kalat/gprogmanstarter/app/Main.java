@@ -42,6 +42,7 @@ public class Main extends Application {
         } else {
             Pane paneStarter = loaderStarter.load();
             StarterController controller = loaderStarter.getController();
+            controller.setAppNames(arguments[0]);
             scene = new Scene(paneStarter);
         }
 

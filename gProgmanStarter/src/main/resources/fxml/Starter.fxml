@@ -18,10 +18,10 @@
       </ImageView>
       <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="16.0" prefWidth="364.0" text="Wybierz baze z listy z którą chcesz uruchomić program" />
       <Label layoutX="10.0" layoutY="58.0" text="Baza:" />
-      <Button fx:id="buttonStart" layoutX="242.0" layoutY="103.0" mnemonicParsing="false" onAction="#onActionButtonStart" text="Uruchom" />
-      <Button fx:id="buttonEnd" layoutX="329.0" layoutY="103.0" mnemonicParsing="false" onAction="#onActionButtonEnd" text="Koniec" />
-      <ChoiceBox layoutX="51.0" layoutY="53.0" prefHeight="26.0" prefWidth="340.0" />
-      <Hyperlink fx:id="urlWK" layoutX="238.0" layoutY="183.0" onAction="#onActionUrlWK" text="http://www.progman.wolterskluwer.pl/">
+      <Button layoutX="242.0" layoutY="103.0" mnemonicParsing="false" onAction="#onActionButtonStart" text="Uruchom" />
+      <Button layoutX="329.0" layoutY="103.0" mnemonicParsing="false" onAction="#onActionButtonEnd" text="Koniec" />
+      <ChoiceBox fx:id="appList" layoutX="51.0" layoutY="53.0" prefHeight="26.0" prefWidth="340.0" />
+      <Hyperlink fx:id="urlLink" layoutX="238.0" layoutY="183.0" onAction="#onActionUrlWK" text="http://www.progman.wolterskluwer.pl/">
          <font>
             <Font size="8.0" />
          </font>

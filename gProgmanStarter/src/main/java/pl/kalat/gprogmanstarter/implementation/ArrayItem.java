@@ -13,6 +13,11 @@ import java.io.UnsupportedEncodingException;
  */
 public class ArrayItem {
 
+    /**
+         * read config file and create array with 
+         * [0][0] name of posiotion in choiceBox
+         * [0][1] db config file name
+    */
     public static String[][] prepareArrayItem(String configFile) {
         int rows = 0;
         rows = countRows(configFile);
