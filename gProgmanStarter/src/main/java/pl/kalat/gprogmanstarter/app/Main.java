@@ -52,5 +52,7 @@ public class Main extends Application {
         primaryStage.setOpacity(0.95);
         primaryStage.setTitle("Progrman starter");
         primaryStage.show();
+        
+        }
+        
     }
-}
