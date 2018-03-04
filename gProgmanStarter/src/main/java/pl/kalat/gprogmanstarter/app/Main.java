@@ -20,7 +20,6 @@ public class Main extends Application {
     public static void main(String[] args) {
         arguments = args;
         launch(args);
-
     }
 
     @Override
@@ -45,7 +44,7 @@ public class Main extends Application {
             controller.setAppNames(arguments[0]);
             scene = new Scene(paneStarter);
         }
-
+ 
         primaryStage.setScene(scene);
         primaryStage.setOpacity(0.95);
         primaryStage.setTitle("Progrman starter");
