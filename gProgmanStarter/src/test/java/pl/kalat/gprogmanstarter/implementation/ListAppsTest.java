@@ -1,6 +1,5 @@
 package pl.kalat.gprogmanstarter.implementation;
 
-import pl.kalat.gprogmanstarter.implementation.ListApps;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;

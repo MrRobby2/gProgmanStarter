@@ -5,8 +5,6 @@
  */
 package pl.kalat.gprogmanstarter.implementation;
 
-import pl.kalat.gprogmanstarter.implementation.ArrayItem;
-import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -22,6 +20,7 @@ public class ArrayItemTest {
     private String[][] arrayGood;
     private String[][] arrayWithSpace;
     private String[][] arrayBad;
+    private ArrayItem arrayItem;
 
     @Before
     public void setUp() {
@@ -32,20 +31,20 @@ public class ArrayItemTest {
             {"Zespół Szkół nr.156", "DB.B.ini"},
             {"Przedszkole nr.44", "DB.C.ini"},
             {"Szkoła podstawowa nr.11", "DB.D.ini"},
-            {"WSTI", "DB.E.ini"}};
-
+            {"WSTI", "DB.E.ini"}
+        };
+        arrayItem = new ArrayItem(configFile);
     }
 
     @Test
     public void testCountRows() {
-        rows = ArrayItem.prepareArrayItem(configFile).length;
+        rows = arrayItem.getRows();
         assertEquals(5, rows);
     }
 
     @Test
     public void testArrayPrepare() {
-        assertArrayEquals(arrayGood, ArrayItem.prepareArrayItem(configFile));
+        assertArrayEquals(arrayGood, arrayItem.getArrayFileLine());
     }
-    
- 
+
 }
