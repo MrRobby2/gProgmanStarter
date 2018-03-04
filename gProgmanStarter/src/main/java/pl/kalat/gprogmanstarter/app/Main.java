@@ -33,8 +33,10 @@ public class Main extends Application {
         FXMLLoader loaderInfo = new FXMLLoader();
         loaderInfo.setLocation(this.getClass().getResource("/fxml/Info.fxml"));
 
-        Scene scene = null;
-        if (arguments.length == 0 || !ListApps.checkAppName(arguments[0])) {
+        // if args is ok show Starter, if not show Info
+        Scene scene;
+        if (arguments.length == 0 || 
+                !ListApps.checkAppName(arguments[0])) {
             Pane paneInfo = loaderInfo.load();
             InfoController controller = loaderInfo.getController();
             scene = new Scene(paneInfo);
@@ -45,10 +47,10 @@ public class Main extends Application {
             scene = new Scene(paneStarter);
         }
  
+        //prepare main stage
         primaryStage.setScene(scene);
         primaryStage.setOpacity(0.95);
         primaryStage.setTitle("Progrman starter");
         primaryStage.show();
-
     }
 }

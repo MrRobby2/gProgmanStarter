@@ -5,8 +5,6 @@
  */
 package pl.kalat.gprogmanstarter.implementation;
 
-import pl.kalat.gprogmanstarter.implementation.ArrayItem;
-import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;

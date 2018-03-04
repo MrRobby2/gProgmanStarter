@@ -46,6 +46,7 @@ public class ArrayItem {
             System.out.println(e.getMessage());
         } catch (IOException e) {
             System.out.println(e.getMessage());
+            System.out.println("Brak pliku");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
