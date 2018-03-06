@@ -8,6 +8,7 @@ public enum ListApps {
     KADRY("kadry", "Kadry.exe", "Kadry.ini"),
     PLACE("place", "Place.exe", "Place.ini"),
     ZLECONE("zlecone", "Zlecone.exe", "Zlecone.ini"),
+    FINANSE("finanse", "Finanse.exe", "Finanse.ini"),
     PRZELEWY("przelewy", "Przelewy.exe", "Przelewy.ini");
 
     private final String appName;

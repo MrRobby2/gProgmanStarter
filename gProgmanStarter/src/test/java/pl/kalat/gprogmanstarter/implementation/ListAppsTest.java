@@ -23,7 +23,6 @@ public class ListAppsTest {
         this.nameExe = "Kadry.exe";
     }
 
-    
     @Test
     public void testToString() {
         assertEquals(ListApps.KADRY.toString(), nameExe);
@@ -34,34 +33,36 @@ public class ListAppsTest {
         nameExe = "Kadry.ini";
         assertNotEquals(ListApps.KADRY.toString(), nameExe);
     }
-    
+
     @Test
     public void testCheckAppNameOnList() {
         assertTrue(ListApps.checkAppName(nameApp));
     }
-    
+
     @Test
     public void testCheckLowerAppNameOnList() {
         nameApp = "KADry";
         assertTrue(ListApps.checkAppName(nameApp));
     }
-    
+
     @Test
     public void testCheckWrongAppNameOnList() {
         nameApp = "Kr3vt3cADry";
         assertFalse(ListApps.checkAppName(nameApp));
     }
-    
+
     @Test
     public void testAllProgmanApp() {
         String nameExe2 = "Place.exe";
         String nameExe3 = "Zlecone.exe";
         String nameExe4 = "Przelewy.exe";
-
+        String nameExe5 = "Finanse.exe";
+        
         assertEquals(ListApps.KADRY.toString(), nameExe);
         assertEquals(ListApps.PLACE.toString(), nameExe2);
         assertEquals(ListApps.ZLECONE.toString(), nameExe3);
         assertEquals(ListApps.PRZELEWY.toString(), nameExe4);
+        assertEquals(ListApps.FINANSE.toString(), nameExe5);
     }
 
     @Test
@@ -82,7 +83,7 @@ public class ListAppsTest {
     }
 
     @Test
-    public void testGetNameConfig(){
+    public void testGetNameConfig() {
         nameConfig = ListApps.getNameConfig(nameApp);
         result = "Kadry.ini";
 
