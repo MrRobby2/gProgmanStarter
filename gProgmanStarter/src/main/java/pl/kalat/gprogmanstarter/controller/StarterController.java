@@ -1,17 +1,12 @@
 package pl.kalat.gprogmanstarter.controller;
 
-import java.awt.Desktop;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Hyperlink;
 import pl.kalat.gprogmanstarter.implementation.ArrayItem;
 import pl.kalat.gprogmanstarter.implementation.ListApps;
 import pl.kalat.gprogmanstarter.implementation.PathConfigFile;
@@ -29,8 +24,6 @@ public class StarterController {
     private String appExe = "";
     private String appConfig = "";
     @FXML
-    private Hyperlink urlLink;
-    @FXML
     private ChoiceBox<String> appList;
 
     /**
@@ -41,17 +34,6 @@ public class StarterController {
     @FXML
     void onActionButtonEnd(ActionEvent event) {
         Platform.exit();
-    }
-
-    /**
-     * Open URL in web browser
-     *
-     * @param event
-     * @throws IOException
-     */
-    @FXML
-    void onActionUrlWK(ActionEvent event) throws IOException {
-        new ProcessBuilder("x-www-browser", urlLink.getText()).start();
     }
 
     /**

@@ -9,7 +9,14 @@ public enum ListApps {
     PLACE("place", "Place.exe", "Place.ini"),
     ZLECONE("zlecone", "Zlecone.exe", "Zlecone.ini"),
     FINANSE("finanse", "Finanse.exe", "Finanse.ini"),
-    PRZELEWY("przelewy", "Przelewy.exe", "Przelewy.ini");
+    ROZRACHUNKI("rozrachunki", "Rozrachunki.exe", "Rozrachunki.ini"),
+    KASA("kasa", "Kasa.exe", "Kasa.ini"),
+    MAGAZYN("magazyn", "Magazyn.exe", "Magazyn.ini"),
+    FUNDUSZ("fundusz", "Fundusz.exe", "Fundusz.ini"),
+    KZP("kzp", "Kzp.exe", "Kzp.ini"),
+    PRZELEWY("przelewy", "Przelewy.exe", "Przelewy.ini"),
+    WYPOSAZENIE("wyposazenie", "Wyposazenie.exe", "Wyposazenie.ini"),
+    STOLOWKA("stolowka", "Stolowka.exe", "Stolowka.ini");
 
     private final String appName;
     private final String appExe;
