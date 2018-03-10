@@ -13,8 +13,9 @@ import java.nio.file.StandardCopyOption;
 public class PathConfigFile {
 
     /**
-     * Copy config file from selected app to progman directory in user directory.
-     * 
+     * Copy config file from selected app to progman directory in user
+     * directory.
+     *
      * @param appName application name
      * @param appConfig config file name
      * @param selectedDB selected option in jbox
@@ -25,8 +26,10 @@ public class PathConfigFile {
         String appdata = System.getenv("APPDATA");
         // config file from selected app
         Path source = Paths.get("db.configs\\" + selectedDB);
+
         // pathname to progman directory in user directory.
-        Path destination = Paths.get(appdata + "\\progman\\" + appName + "\\" + appConfig);
+        Path destination = Paths.get(appdata + "\\progman\\" + ListApps.getDirectoryConfig(appName) + "\\" + appConfig);
+
         // copy config file from selected app to progman directory in user directory.
         Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
     }

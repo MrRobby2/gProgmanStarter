@@ -23,6 +23,7 @@ public class StarterController {
     private String appName = "";
     private String appExe = "";
     private String appConfig = "";
+    private String appDirectoryConfig = "";
     @FXML
     private ChoiceBox<String> appList;
 
@@ -93,5 +94,6 @@ public class StarterController {
         this.appName = appName.toLowerCase();
         this.appExe = ListApps.getNameExe(appName);
         this.appConfig = ListApps.getNameConfig(appName);
+        this.appDirectoryConfig = ListApps.getDirectoryConfig(appName);
     }
 }

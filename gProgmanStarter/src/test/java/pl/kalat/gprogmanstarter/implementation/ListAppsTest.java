@@ -106,6 +106,22 @@ public class ListAppsTest {
     }
 
     @Test
+    public void testGetDirectoryConfig() {
+        nameConfig = ListApps.getDirectoryConfig("kasa");
+        result = "kasa ddj";
+
+        assertEquals(result, nameConfig);
+    }
+    
+    @Test
+    public void testGetDirectoryConfig2() {
+        nameConfig = ListApps.getDirectoryConfig("stolowka");
+        result = "stołówka";
+
+        assertEquals(result, nameConfig);
+    }
+    
+    @Test
     public void testGetLowerNameConfig() {
         nameApp = "KADry";
         nameConfig = ListApps.getNameConfig(nameApp);

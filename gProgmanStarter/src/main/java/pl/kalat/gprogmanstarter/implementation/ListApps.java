@@ -5,27 +5,29 @@ package pl.kalat.gprogmanstarter.implementation;
  * @author Robert Kałat
  */
 public enum ListApps {
-    KADRY("kadry", "Kadry.exe", "Kadry.ini"),
-    PLACE("place", "Place.exe", "Place.ini"),
-    ZLECONE("zlecone", "Zlecone.exe", "Zlecone.ini"),
-    FINANSE("finanse", "Finanse.exe", "Finanse.ini"),
-    ROZRACHUNKI("rozrachunki", "Rozrachunki.exe", "Rozrachunki.ini"),
-    KASA("kasa", "Kasa.exe", "Kasa.ini"),
-    MAGAZYN("magazyn", "Magazyn.exe", "Magazyn.ini"),
-    FUNDUSZ("fundusz", "Fundusz.exe", "Fundusz.ini"),
-    KZP("kzp", "Kzp.exe", "Kzp.ini"),
-    PRZELEWY("przelewy", "Przelewy.exe", "Przelewy.ini"),
-    WYPOSAZENIE("wyposazenie", "Wyposazenie.exe", "Wyposazenie.ini"),
-    STOLOWKA("stolowka", "Stolowka.exe", "Stolowka.ini");
+    KADRY("kadry", "Kadry.exe", "Kadry.ini", "kadry"),
+    PLACE("place", "Place.exe", "Place.ini", "place"),
+    ZLECONE("zlecone", "Zlecone.exe", "Zlecone.ini", "zlecone"),
+    FINANSE("finanse", "Finanse.exe", "Finanse.ini", "finanse"),
+    ROZRACHUNKI("rozrachunki", "Rozrachunki.exe", "Rozrachunki.ini", "rozrachunki"),
+    KASA("kasa", "Kasa.exe", "Kasa.ini", "kasa ddj"),
+    MAGAZYN("magazyn", "Magazyn.exe", "Magazyn.ini", "magazyn"),
+    FUNDUSZ("fundusz", "Fundusz.exe", "Fundusz.ini", "fundusz"),
+    KZP("kzp", "Kzp.exe", "Kzp.ini", "kzp"),
+    PRZELEWY("przelewy", "Przelewy.exe", "Przelewy.ini", "przelewy"),
+    WYPOSAZENIE("wyposazenie", "Wyposazenie.exe", "Wyposazenie.ini", "wyposazenie"),
+    STOLOWKA("stolowka", "Stolowka.exe", "Stolowka.ini", "stołówka");
 
     private final String appName;
     private final String appExe;
     private final String appConfig;
+    private final String appDirectoryConfig;
 
-    private ListApps(String appName, String appExe, String appConfig) {
+    private ListApps(String appName, String appExe, String appConfig, String appDirectoryConfig) {
         this.appName = appName;
         this.appExe = appExe;
         this.appConfig = appConfig;
+        this.appDirectoryConfig = appDirectoryConfig;
     }
 
     public String getAppName() {
@@ -38,6 +40,10 @@ public enum ListApps {
 
     public String getAppConfig() {
         return appConfig;
+    }
+
+    public String getAppDirectoryConfig() {
+        return appDirectoryConfig;
     }
 
     /**
@@ -87,6 +93,22 @@ public enum ListApps {
         return result;
     }
 
+        /**
+     * Get name of directory with INI file
+     *
+     * @param arg App name (argument from main method)
+     * @return name of firectory with INI file
+     */
+    public static String getDirectoryConfig(String arg) {
+        String result = "";
+        for (ListApps n : ListApps.values()) {
+            if (n.getAppName().equals(arg.toLowerCase())) {
+                result = n.getAppDirectoryConfig();
+            }
+        }
+        return result;
+    }
+    
     /**
      *
      * @return name of EXE file
