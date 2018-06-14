@@ -16,8 +16,9 @@ public enum ListApps {
     KZP("kzp", "Kzp.exe", "Kzp.ini", "kzp"),
     PRZELEWY("przelewy", "Przelewy.exe", "Przelewy.ini", "przelewy"),
     WYPOSAZENIE("wyposazenie", "Wyposazenie.exe", "Wyposazenie.ini", "wyposazenie"),
-    STOLOWKA("stolowka", "Stolowka.exe", "Stolowka.ini", "stołówka");
-
+    STOLOWKA("stolowka", "Stolowka.exe", "Stolowka.ini", "stołówka"),
+    BIBLIOTEKA("biblioteka", "Biblioteka.exe", "biblio.ini", "biblioteka");
+    
     private final String appName;
     private final String appExe;
     private final String appConfig;

@@ -6,23 +6,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kalat.gprogmanstarter.controller.InfoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kalat.gprogmanstarter.controller.InfoController">
    <children>
-      <StackPane prefHeight="200.0" prefWidth="639.0">
+      <StackPane prefHeight="200.0" prefWidth="723.0">
          <children>
             <VBox prefHeight="200.0" prefWidth="554.0">
                <children>
-                  <Label fx:id="starterInfoLabel" alignment="CENTER" prefHeight="54.0" prefWidth="643.0" text="Label" textAlignment="CENTER">
+                  <Label fx:id="starterInfoLabel" alignment="CENTER" prefHeight="54.0" prefWidth="731.0" text="Label" textAlignment="CENTER">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="starterInfoLabel2" alignment="CENTER" prefHeight="35.0" prefWidth="655.0" text="Label" textAlignment="CENTER">
+                  <Label fx:id="starterInfoLabel2" alignment="CENTER" prefHeight="35.0" prefWidth="858.0" text="Label" textAlignment="CENTER">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="starterInfoLabel3" alignment="CENTER" prefHeight="35.0" prefWidth="643.0" text="Label" textAlignment="CENTER">
+                  <Label fx:id="starterInfoLabel3" alignment="CENTER" prefHeight="35.0" prefWidth="750.0" text="Label" textAlignment="CENTER">
                      <font>
                         <Font size="12.0" />
                      </font>

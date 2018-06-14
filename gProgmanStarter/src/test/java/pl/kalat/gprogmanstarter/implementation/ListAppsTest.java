@@ -64,6 +64,7 @@ public class ListAppsTest {
         String nameExe10 = "Kzp.exe";
         String nameExe11 = "Stolowka.exe";
         String nameExe12 = "Wyposazenie.exe";
+        String nameExe13 = "Biblioteka.exe";
         
         assertEquals(ListApps.KADRY.toString(), nameExe);
         assertEquals(ListApps.PLACE.toString(), nameExe2);
@@ -77,7 +78,7 @@ public class ListAppsTest {
         assertEquals(ListApps.KZP.toString(), nameExe10);
         assertEquals(ListApps.STOLOWKA.toString(), nameExe11);
         assertEquals(ListApps.WYPOSAZENIE.toString(), nameExe12);
-        
+        assertEquals(ListApps.BIBLIOTEKA.toString(), nameExe13);
     }
 
     @Test

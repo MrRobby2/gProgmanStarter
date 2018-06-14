@@ -28,9 +28,14 @@ public class PathConfigFile {
         Path source = Paths.get("db.configs\\" + selectedDB);
 
         // pathname to progman directory in user directory.
-        Path destination = Paths.get(appdata + "\\progman\\" + ListApps.getDirectoryConfig(appName) + "\\" + appConfig);
-
-        // copy config file from selected app to progman directory in user directory.
+        Path destination;
+        if (appName.equals("biblioteka")) {
+            destination = Paths.get(appConfig);
+        } else {
+            destination = Paths.get(appdata + "\\progman\\" + ListApps.getDirectoryConfig(appName) + "\\" + appConfig);
+        }
+        
+        // copy config file from selected app to progman directory in user directory.      
         Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
     }
 }
